@@ -15,11 +15,11 @@ int main()
     {
         if(op == '1')
         {
-            printf("Enter the temperature of celcius (캜): ");
+            printf("Enter the temperature of celcius (째C): ");
             scanf("%lf", &c);
 
             f = (c * 1.8) + 32.0;
-            printf("Temperature in fahrenheit: %.2lf (캟)", f);
+            printf("Temperature in fahrenheit: %.2lf (째F)", f);
             printf("\nAre u wanna continue, y or n\n");
             printf("Enter the operation: ");
             scanf("%s", &op);
@@ -27,11 +27,11 @@ int main()
             {
                 if(op == 'y')
                 {
-                    printf("Enter the temperature of celcius (캜): ");
+                    printf("Enter the temperature of celcius (째C): ");
                     scanf("%lf", &c);
 
                     f = (c * 1.8) + 32.0;
-                    printf("Temperature in fahrenheit: %.2lf (캟)", f);
+                    printf("Temperature in fahrenheit: %.2lf (째F)", f);
                     printf("\nAre u wanna continue, y or n\n");
                     printf("Enter the operation: ");
                     scanf("%s", &op);
@@ -44,11 +44,11 @@ int main()
         }
         if(op == '2')
         {
-            printf("Enter the temperature of fahrenheit (캟): ");
+            printf("Enter the temperature of fahrenheit (째F): ");
             scanf("%lf", &f);
 
             c = (f - 32.0) * 5/9;
-            printf("Temperature in celcius: %.2lf (캜)", c);
+            printf("Temperature in celcius: %.2lf (째C)", c);
             printf("\nAre u wanna continue, y or n\n");
             printf("Enter the operation: ");
             scanf("%s", &op);
@@ -56,11 +56,11 @@ int main()
             {
                 if(op == 'y')
                 {
-                    printf("Enter the temperature of fahrenheit (캟): ");
+                    printf("Enter the temperature of fahrenheit (째F): ");
 		    scanf("%lf", &f);
 
                     c = (f - 32.0) * 5/9;
-                    printf("Temperature in celcius: %.2lf (캜)", c);
+                    printf("Temperature in celcius: %.2lf (째C)", c);
                     printf("\nAre u wanna continue, y or n\n");
                     printf("Enter the operation: ");
                     scanf("%s", &op);
@@ -186,7 +186,7 @@ int main()
                     return main();
                 }
             }
-		}  
+	}  
         if(op == '7')
 		{
 	    	printf("Enter the Milimeters value: ");	
