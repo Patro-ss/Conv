@@ -246,7 +246,7 @@ int main()
 				}
 			}		
 		}
-   		else
+   	else
         {
             printf("Invalid operation");
             return main();
