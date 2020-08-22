@@ -7,7 +7,7 @@ int main()
 {
 	setbuf(stdout, NULL);
 	double c, f, km, m, nm, ms, mm, cm;
-	char op[5];
+	char op[10];
 
 	printf("\n1. Celsius to Fahrenheit, \n2. Fahrenheit to Celsius, \n3. Kilometers to Miles, \n4. Miles to Kilometers, \n5. Nautical miles to Meters, \n6. Meters to Natuical miles, \n7. Millimeters to Centimeters\
 	\n8.Centimeters to Millimeters \n");
@@ -15,9 +15,9 @@ int main()
 
 	scanf("%s", op); 
 
-	while(strcmp(op, "0"))
+	while(strcmp(op, "0") != 0)
 	{
-		if(strcmp(op, "1"))
+		if(strcmp(op, "1") == 0)
 		{
 			printf("Enter the temperature of celcius (°C): ");
 			scanf("%lf", &c);
@@ -27,9 +27,9 @@ int main()
 			printf("\nAre u wanna continue, y or n\n");
 			printf("Enter the operation: ");
 			scanf("%s", op);
-			while(strcmp(op, "0"))
+			while(strcmp(op, "0") != 0)
 			{
-				if(strcmp(op, "y"))
+				if(strcmp(op, "y") == 0)
 				{
 					printf("Enter the temperature of celcius (°C): ");
 					scanf("%lf", &c);
@@ -40,13 +40,13 @@ int main()
 					printf("Enter the operation: ");
 					scanf("%s", op);
 				}
-				if(strcmp(op, "n"))
+				if(strcmp(op, "n") == 0)
 				{
 					return main();
 				}
 			}
 		}
-		if(strcmp(op, "2"))
+		if(strcmp(op, "2") == 0)
 		{
 			printf("Enter the temperature of fahrenheit (°F): ");
 			scanf("%lf", &f);
@@ -56,9 +56,9 @@ int main()
 			printf("\nAre u wanna continue, y or n\n");
 			printf("Enter the operation: ");
 			scanf("%s", op);
-			while(strcmp(op, "0"))
+			while(strcmp(op, "0") != 0)
 			{
-				if(strcmp(op, "y"))
+				if(strcmp(op, "y") == 0)
 				{
 					printf("Enter the temperature of fahrenheit (°F): ");
 			scanf("%lf", &f);
@@ -69,13 +69,13 @@ int main()
 					printf("Enter the operation: ");
 					scanf("%s", op);
 				}
-				if(strcmp(op, "n"))
+				if(strcmp(op, "n") == 0)
 				{
 					return main();
 				}
 			}
 		}
-		if(strcmp(op, "3"))
+		if(strcmp(op, "3") == 0)
 		{
 			printf("Enter the value of kilometers: ");
 			scanf("%lf", &km);
@@ -85,9 +85,9 @@ int main()
 			printf("\nAre u wanna continue, y or n\n");
 			printf("Enter the operation: ");
 			scanf("%s", op);
-			while(strcmp(op, "0"))
+			while(strcmp(op, "0") != 0)
 			{
-				if(strcmp(op, "y"))
+				if(strcmp(op, "y") == 0)
 				{
 					printf("Enter the value of kilometers: ");
 					scanf("%lf", &km);
@@ -98,13 +98,13 @@ int main()
 					printf("Enter the operation: ");
 					scanf("%s", op);
 				}
-				if(strcmp(op, "n"))
+				if(strcmp(op, "n") == 0)
 				{
 				   return main();
 				}
 			}
 		}
-		if(strcmp(op, "4"))
+		if(strcmp(op, "4") == 0)
 		{
 			printf("Enter the value of miles: ");
 			scanf("%lf", &m);
@@ -114,9 +114,9 @@ int main()
 			printf("\nAre u wanna continue, y or n\n");
 			printf("Enter the operation: ");
 			scanf("%s", op);
-			while(strcmp(op, "0"))
+			while(strcmp(op, "0") != 0)
 			{
-				if(strcmp(op, "y"))
+				if(strcmp(op, "y") == 0)
 				{
 					printf("Enter the value of miles: ");
 					scanf("%lf", &m);
@@ -127,13 +127,13 @@ int main()
 					printf("Enter the operation: ");
 					scanf("%s", op);
 				}
-				if(strcmp(op, "n"))
+				if(strcmp(op, "n") == 0)
 				{
 					return main();
 				}
 			}
 		}
-		if(strcmp(op, "5"))
+		if(strcmp(op, "5") == 0)
 		{
 			printf("Enter the value in meters: ");
 			scanf("%lf", &ms);
@@ -143,9 +143,9 @@ int main()
 			printf("\nAre u wanna continue, y or n\n");
 			printf("Enter the operation: ");
 			scanf("%s", op);
-			while(strcmp(op, "0"))
+			while(strcmp(op, "0") != 0)
 			{
-				if(strcmp(op, "y"))
+				if(strcmp(op, "y") == 0)
 				{
 					printf("Enter the value in meters: ");
 					scanf("%lf", &ms);
@@ -156,13 +156,13 @@ int main()
 					printf("Enter the operation: ");
 					scanf("%s", op);
 				}
-				if(strcmp(op, "n"))
+				if(strcmp(op, "n") == 0)
 				{
 				   return main();
 				}
 			}
 		}
-		if(strcmp(op, "6"))
+		if(strcmp(op, "6") == 0)
 		{
 			printf("Enter the value in nautical miles: ");
 			scanf("%lf", &nm);
@@ -172,9 +172,9 @@ int main()
 			printf("\nAre u wanna continue, y or n\n");
 			printf("Enter the operation: ");
 			scanf("%s", op);
-			while(op != 0)
+			while(strcmp(op, "0") != 0)
 			{
-				if(strcmp(op, "y"))
+				if(strcmp(op, "y") == 0)
 				{
 					printf("Enter the value in nautical miles: ");
 					scanf("%lf", &nm);
@@ -185,13 +185,13 @@ int main()
 					printf("Enter the operation: ");
 					scanf("%s", op);
 				}
-				if(strcmp(op, "n"))
+				if(strcmp(op, "n") == 0)
 				{
 					return main();
 				}
 			}
 	}  
-		if(strcmp(op, "7"))
+		if(strcmp(op, "7") == 0)
 		{
 			printf("Enter the Milimeters value: ");	
 			scanf("%lf", &mm);
@@ -201,9 +201,9 @@ int main()
 			printf("\nAre u wanna continue, y or n\n");
 			printf("Enter the operation: ");
 			scanf("%s", op);
-			while(op != 0)
+			while(strcmp(op, "0") != 0)
 			{
-				if(strcmp(op, "y"))
+				if(strcmp(op, "y") == 0)
 				{
 					printf("Enter the Milimeters value: ");	
 					scanf("%lf", &mm);
@@ -215,13 +215,13 @@ int main()
 					scanf("%s", op);
 
 				}
-				if(strcmp(op, "n"))
+				if(strcmp(op, "n") == 0)
 				{
 					return main();
 				}
 			}		
 		}
-		if(strcmp(op, "8"))
+		if(strcmp(op, "8") == 0)
 		{
 			printf("Enter the Centimeters value: ");	
 			scanf("%lf", &cm);
@@ -231,9 +231,9 @@ int main()
 			printf("\nAre u wanna continue, y or n\n");
 			printf("Enter the operation: ");
 			scanf("%s", op);
-			while(op != 0)
+			while(strcmp(op, "0") != 0)
 			{
-				if(strcmp(op, "y"))
+				if(strcmp(op, "y") == 0)
 				{
 					printf("Enter the Centimeters value: ");	
 					scanf("%lf", &cm);
@@ -244,7 +244,7 @@ int main()
 					printf("Enter the operation: ");
 					scanf("%s", op);
 				}
-				if(strcmp(op, "n"))
+				if(strcmp(op, "n") == 0)
 				{
 					return main();
 				}
