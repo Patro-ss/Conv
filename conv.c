@@ -8,16 +8,14 @@ int main()
 	setbuf(stdout, NULL);
 	double c, f, km, m, nm, ms, mm, cm;
 	char op[10];
-
-	printf("\n1. Celsius to Fahrenheit, \n2. Fahrenheit to Celsius, \n3. Kilometers to Miles, \n4. Miles to Kilometers, \n5. Nautical miles to Meters, \n6. Meters to Natuical miles, \n7. Millimeters to Centimeters\
-	\n8.Centimeters to Millimeters \n");
-	printf("Enter the operation: ");
-
+   	printf("\nc_f. Celsius to Fahrenheit, \nf_c. Fahrenheit to Celsius, \nkm_m. Kilometers to Miles, \nm_km. Miles to Kilometers, \nnm_ms. Nautical miles to Meters, \nms_nm. Meters to Natuical miles, \
+	\nmm_cm. Millimeters to Centimeters, \ncm_mm.Centimeters to Millimeters \n");
+	printf("\nEnter the operation: ");
 	scanf("%s", op); 
 
 	while(strcmp(op, "0") != 0)
 	{
-		if(strcmp(op, "1") == 0)
+		if(strcmp(op, "c_f") == 0)
 		{
 			printf("Enter the temperature of celcius (°C): ");
 			scanf("%lf", &c);
@@ -46,7 +44,7 @@ int main()
 				}
 			}
 		}
-		if(strcmp(op, "2") == 0)
+		if(strcmp(op, "f_c") == 0)
 		{
 			printf("Enter the temperature of fahrenheit (°F): ");
 			scanf("%lf", &f);
@@ -75,7 +73,7 @@ int main()
 				}
 			}
 		}
-		if(strcmp(op, "3") == 0)
+		if(strcmp(op, "km_m") == 0)
 		{
 			printf("Enter the value of kilometers: ");
 			scanf("%lf", &km);
@@ -104,7 +102,7 @@ int main()
 				}
 			}
 		}
-		if(strcmp(op, "4") == 0)
+		if(strcmp(op, "m_km") == 0)
 		{
 			printf("Enter the value of miles: ");
 			scanf("%lf", &m);
@@ -133,7 +131,7 @@ int main()
 				}
 			}
 		}
-		if(strcmp(op, "5") == 0)
+		if(strcmp(op, "m_nm") == 0)
 		{
 			printf("Enter the value in meters: ");
 			scanf("%lf", &ms);
@@ -162,7 +160,7 @@ int main()
 				}
 			}
 		}
-		if(strcmp(op, "6") == 0)
+		if(strcmp(op, "nm_m") == 0)
 		{
 			printf("Enter the value in nautical miles: ");
 			scanf("%lf", &nm);
@@ -191,7 +189,7 @@ int main()
 				}
 			}
 	}  
-		if(strcmp(op, "7") == 0)
+		if(strcmp(op, "mm_cm") == 0)
 		{
 			printf("Enter the Milimeters value: ");	
 			scanf("%lf", &mm);
@@ -221,7 +219,7 @@ int main()
 				}
 			}		
 		}
-		if(strcmp(op, "8") == 0)
+		if(strcmp(op, "cm_mm") == 0)
 		{
 			printf("Enter the Centimeters value: ");	
 			scanf("%lf", &cm);
