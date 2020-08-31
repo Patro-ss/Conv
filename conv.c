@@ -285,7 +285,7 @@ int main()
 			printf("Value in centimeters: %.2lf", cm);
 			printf("\nAre u wanna continue, y or n\n");
 			printf("Enter the operation: ");
-			scanf("%lf", &cm);
+			scanf("%s", op);
 			while(strcmp(op, "0") != 0)
 			{
 				if(strcmp(op, "y") == 0)
