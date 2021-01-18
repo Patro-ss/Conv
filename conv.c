@@ -18,8 +18,8 @@ printf("----------------------------------------------------- \
 		while(strcmp(op, "0") != 0) {
 			if(!strcmp(op, "c_f")) {
 				c_f();
-            } else if(!strcmp(op, "f_c")) {
-                f_c();		
+            		} else if(!strcmp(op, "f_c")) {
+                		f_c();		
 			} else if(!strcmp(op, "mm_cm")) {
 				mm_cm(); 
 			} else if(!strcmp(op, "mm_dm")) {
@@ -31,9 +31,9 @@ printf("----------------------------------------------------- \
 			} else if(!strcmp(op, "mm_ih")) {
 				mm_ih();
 			} else if(!strcmp(op, "cm_mm")) {
-			cm_mm();
+				cm_mm();
 			} else if(!strcmp(op, "cm_dm")) {
-			cm_dm();
+				cm_dm();
 			} else if(!strcmp(op, "dm_cm")) {
 				dm_cm();
 			} else if(!strcmp(op, "cm_km")) {
@@ -57,7 +57,7 @@ printf("----------------------------------------------------- \
 			} else if(!strcmp(op, "km_cm")) {
 				km_cm(); 
 			} else if(!strcmp(op, "km_ft")) {
-                km_ft();	
+                		km_ft();	
 			} else if(!strcmp(op, "km_ih")) {
 				km_ih(); 
 			} else if(!strcmp(op, "m_km")) { 
@@ -73,10 +73,9 @@ printf("----------------------------------------------------- \
 			} else {
 				printf("Invalid input");
 				main();
+			}
 		}
-	}
-} 
-
+	} 
 int c_f(void) {
 	printf("Enter the temperature of celcius ( C): ");
 	scanf("%d", &c);
